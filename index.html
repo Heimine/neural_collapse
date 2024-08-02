@@ -140,51 +140,7 @@
             <li><a href="#crate_ae_paper" class="internal_link">Our ICLR 2024 paper</a>, which extended the CRATE framework to self-supervised learning tasks, including (masked) autoencoding.</li>
           </ul>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+        
 
       </div>
     </div>
@@ -193,28 +149,6 @@
   </div>
 </section>
 <!-- List of Reference. -->
-
-<section>
-  <h2>Summary</h2>
-
-  <p>
-      <em><b>CRATE</b> is a transformer-like architecture which is constructed through first principles, enjoys a rich theoretical framework, and achieves competitive performance across diverse training setups.</em>
-  </p>
-
-  <p>
-      At the top of the page, we have linked a long-form manuscript explaining the CRATE architecture in full detail. Below, we summarize the numerous sub-projects that have developed the CRATE architecture. These consist of:
-  </p>
-
-  <ul>
-      <li><a href="#crate_original_paper" class="internal_link">Our NeurIPS 2023 paper</a>, which developed the original CRATE framework and applied it to vision classification.</li>
-      <li><a href="#crate_seg_paper" class="internal_link">Our CPAL 2024 paper</a>, which used the learned representations in classification-trained CRATE models for semantic segmentation tasks.</li>
-      <li><a href="#crate_ae_paper" class="internal_link">Our ICLR 2024 paper</a>, which extended the CRATE framework to self-supervised learning tasks, including (masked) autoencoding.</li>
-  </ul>
-
-  <p>
-      Code, paper links, bibliographic information, and short write-ups are listed below for each project. At the <a href="#follow-up-projects" class="internal_link">bottom of the page</a>, we also shout-out some follow-up work.
-  </p>
-</section>
 
 <footer class="footer">
   <div class="container">
