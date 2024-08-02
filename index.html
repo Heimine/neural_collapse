@@ -69,45 +69,41 @@
         <div class="content has-text-justified">
           <ul>
             <li>Prevalence of Neural Collapse During the Terminal Phase of Deep Learning Training 
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
+              <!-- Links -->
+              <div class="button_list">
+                <a href="https://github.com/Ma-Lab-Berkeley/CRATE" target="_blank">
+                    <button>
+                        <i class="ti ti-brand-github"></i>
+                    </button>
                 </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+                <a href="https://arxiv.org/abs/2306.01129" target="_blank">
+                    <button>
+                        <i class="ti ti-article"></i>
+                    </button>
                 </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
+                <a onclick="toggleBibtex('#papyan2020prevalence')">
+                    <button>
+                        <i class="ti ti-book-2"></i>
+                    </button>
                 </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span></li>
+              </div>
+              <section id="papyan2020prevalence" style="display: none">
+                <div style="height: 1em"></div>
+                <div style="height: 1em"></div>
+                <pre>
+                    <code>@article{papyan2020prevalence,
+                      title={Prevalence of neural collapse during the terminal phase of deep learning training},
+                      author={Papyan, Vardan and Han, XY and Donoho, David L},
+                      journal={Proceedings of the National Academy of Sciences},
+                      volume={117},
+                      number={40},
+                      pages={24652--24663},
+                      year={2020},
+                      publisher={National Acad Sciences}
+                    }</code>
+                </pre>
+                </section>
+            </li>
             <li><a href="#crate_seg_paper" class="internal_link">Our CPAL 2024 paper</a>, which used the learned representations in classification-trained CRATE models for semantic segmentation tasks.</li>
             <li><a href="#crate_ae_paper" class="internal_link">Our ICLR 2024 paper</a>, which extended the CRATE framework to self-supervised learning tasks, including (masked) autoencoding.</li>
           </ul>
