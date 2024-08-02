@@ -16,7 +16,7 @@ body {
 .button_list {
   display: inline-block;
   justify-content: flex-end;
-  gap: 0.0em 1.1em;
+  gap: 0.0em 1em;
   flex-wrap: wrap;
 }
 
