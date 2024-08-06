@@ -201,8 +201,8 @@
                       url={https://openreview.net/forum?id=y8NevOhrnW}
                       }</code>
                 </pre>
-                </section>
-              </li>
+              </section>
+            </li>
               
               <li><b>Generalized Neural Collapse for a Large Number of Classes.</b> <em>Jiachen Jiang, Jinxin Zhou, Peng Wang, Qing Qu, Dustin Mixon, Chong You, Zhihui Zhu.</em> ArXiv preprint.
                 <!-- Links -->
@@ -248,26 +248,22 @@
     <br/>
     <!-- PROGRESSIVE COLLAPSE ACROSS LAYERS. -->
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Progressive <span class="dnerf">Neural Collapse</span> across Layers </h2>
+      <h2 class="title is-3">Progressive <span class="dnerf">Neural Collapse</span> across Layers </h2>
 
-        <!-- Phenemona. -->
-        <h3 class="title is-4">Phenomena</h3>
-        <div class="content has-text-justified">
-          <ul>
-            <script>
-              fetch('static/sections/pnc_phenomena.html')
-                  .then(response => response.text())
-                  .then(data => {
-                      document.getElementById('content').innerHTML = data;
-                  })
-                  .catch(error => console.error('Error loading content:', error));
-            </script>
-          </ul>
-        </div>
+      <!-- Phenemona. -->
+      <h3 class="title is-4">Phenomena</h3>
+      <div class="content has-text-justified pnc_phenomena">
+        <script>
+          fetch('static/sections/pnc_phenomena.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('pnc_phenomena').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading content:', error));
+        </script>
+      </div>
         
 
-      </div>
     </div>
     <!--/ PROGRESSIVE COLLAPSE ACROSS LAYERS. -->
 
