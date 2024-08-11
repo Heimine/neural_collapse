@@ -80,7 +80,10 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Neural Collapse</span> reveals a simple yet elegant mathematical structure within the learned features during the terminal phase of training. The research effort about Neural Collapse encompasses both theoretical aspects to better understand the phenomenon and practical applications in domains such as transfer learning, long-tailed classification, continual learning, out-of-domain detection, etc. This page collects recent research effort in this line. <span style="color: teal;">(Update: Aug 1st, 2024.)</span>
+        <span class="dnerf">Neural Collapse</span> reveals a simple yet elegant mathematical structure within the learned features during the terminal phase of training. 
+        The research effort about Neural Collapse encompasses both theoretical aspects to better understand the phenomenon and practical applications in domains such as transfer learning, 
+        long-tailed classification, continual learning, out-of-domain detection, etc. This page collects recent research effort in this line. 
+        <span style="color: teal;">(Update: Aug 10th, 2024.)</span>
       </h2>
     </div>
   </div>
@@ -168,7 +171,7 @@
             </section>
         </li>
         
-        <li><b>Neural Collapse in Multi-label Learning with Pick-all-label Loss.</b> <em>Pengyu Li, Xiao Li, Yutong Wang, Qing Qu.</em> Forty-first International Conference on Machine Learning.
+        <li><b>Neural Collapse in Multi-label Learning with Pick-all-label Loss.</b> <em>Pengyu Li, Xiao Li, Yutong Wang, Qing Qu.</em> 41st International Conference on Machine Learning.
           <!-- Links -->
           <div class="button_list">
             <a href="https://arxiv.org/abs/2310.15903" target="_blank">
@@ -242,23 +245,235 @@
         <li> To be filled
       </ul>
 
-    <!--/ Neural Collapse in Last-Layer. -->
 
   </div>
 </section>
-<!-- List of Reference. -->
+<!--/ Neural Collapse in Last-Layer. -->
 
 <br/>
 <br/>
 <!-- PROGRESSIVE COLLAPSE ACROSS LAYERS. -->
-<div id="container2">
-  <p>
-  <object type="text/html" data="./static/sections/pnc_phenomena.html" height="1"></object>
-</p>
-</div>
+<!-- <object type="text/html" data="./static/sections/pnc_phenomena.html" width="100%"></object> -->
+<div class="container is-max-desktop">
+  <h2 class="title is-3">Proressive <span class="dnerf">Neural Collapse</span> across Layers</h2>
 
+  <!-- Phenemona. -->
+  <h3 class="title is-4">Phenomena</h3>
+  <div class="content has-text-justified">
+      <ul> 
+      <li><b>A Law of Data Separation in Deep Learning.</b> <em>Hangfeng He, Weijie J. Su.</em> Proceedings of the National Academy of Sciences.
+          <!-- Links -->
+          <div class="button_list">
+          <a href="https://arxiv.org/abs/2210.17020" target="_blank">
+              <button>
+                  <i class="ai ai-arxiv"></i>
+                  arXiv
+              </button>
+          </a>
+          <a href="https://github.com/HornHehhf/Equi-Separation" target="_blank">
+              <button>
+                  <i class="ti ti-brand-github"></i>
+                  GitHub
+              </button>
+          </a>
+          <a onclick="toggleBibtex('#he2023law')">
+              <button>
+                  <i class="ti ti-book-2"></i>
+                  BibTeX
+              </button>
+          </a>
+          </div>
+          <section id="he2023law" style="display: none">
+          <pre>
+              <code>@article{he2023law,
+                  title={A law of data separation in deep learning},
+                  author={He, Hangfeng and Su, Weijie J},
+                  journal={Proceedings of the National Academy of Sciences},
+                  volume={120},
+                  number={36},
+                  pages={e2221704120},
+                  year={2023},
+                  publisher={National Acad Sciences}
+              }</code>
+          </pre>
+          </section>
+      </li>
+
+      <li><b>Nearest Class-Center Simplification through Intermediate Layers.</b> <em>Ido Ben-Shaul, Shai Dekel.</em> Topological, Algebraic and Geometric Learning Workshops 2022.
+        <!-- Links -->
+        <div class="button_list">
+          <a href="https://arxiv.org/abs/2201.08924" target="_blank">
+              <button>
+                  <i class="ai ai-arxiv"></i>
+                  arXiv
+              </button>
+          </a>
+          <a onclick="toggleBibtex('#ben2022nearest')">
+              <button>
+                  <i class="ti ti-book-2"></i>
+                  BibTeX
+              </button>
+          </a>
+        </div>
+        <section id="ben2022nearest" style="display: none">
+          <pre>
+              <code>@inproceedings{ben2022nearest,
+                title={Nearest class-center simplification through intermediate layers},
+                author={Ben-Shaul, Ido and Dekel, Shai},
+                booktitle={Topological, Algebraic and Geometric Learning Workshops 2022},
+                pages={37--47},
+                year={2022},
+                organization={PMLR}
+              }</code>
+          </pre>
+          </section>
+      </li>
+
+      <li><b>On the Implicit Bias Towards Minimal Depth of Deep Neural Networks.</b> <em>Tomer Galanti, Liane Galanti, Ido Ben-Shaul.</em> ArXiv preprint.
+        <!-- Links -->
+        <div class="button_list">
+          <a href="https://arxiv.org/abs/2202.09028" target="_blank">
+              <button>
+                  <i class="ai ai-arxiv"></i>
+                  arXiv
+              </button>
+          </a>
+          <a onclick="toggleBibtex('#galanti2022implicit')">
+              <button>
+                  <i class="ti ti-book-2"></i>
+                  BibTeX
+              </button>
+          </a>
+        </div>
+        <section id="galanti2022implicit" style="display: none">
+          <pre>
+              <code>@article{galanti2022implicit,
+                title={On the implicit bias towards minimal depth of deep neural networks},
+                author={Galanti, Tomer and Galanti, Liane and Ben-Shaul, Ido},
+                journal={arXiv preprint arXiv:2202.09028},
+                year={2022}
+              }</code>
+          </pre>
+          </section>
+      </li>
+
+      <li><b>Feature Learning in Deep Classifiers through Intermediate Neural Collapse.</b> <em>Akshay Rangamani, Marius Lindegaard, Tomer Galanti, Tomaso A Poggio.</em> 40th International Conference on Machine Learning.
+        <!-- Links -->
+        <div class="button_list">
+          <a href="https://proceedings.mlr.press/v202/rangamani23a.html" target="_blank">
+            <button>
+                <i class="fas fa-file-pdf"></i>
+                Link
+            </button>
+          </a>
+          <a href="https://github.com/mariuslindegaard/Intermediate_Neural_Collapse" target="_blank">
+            <button>
+                <i class="ti ti-brand-github"></i>
+                GitHub
+            </button>
+          </a>
+          <a onclick="toggleBibtex('#rangamani2023feature')">
+              <button>
+                  <i class="ti ti-book-2"></i>
+                  BibTeX
+              </button>
+          </a>
+        </div>
+        <section id="rangamani2023feature" style="display: none">
+          <pre>
+              <code>@InProceedings{rangamani2023feature,
+                title = 	 {Feature learning in deep classifiers through Intermediate Neural Collapse},
+                author =       {Rangamani, Akshay and Lindegaard, Marius and Galanti, Tomer and Poggio, Tomaso A},
+                booktitle = {International Conference on Machine Learning},
+                pages = 	 {28729--28745},
+                year = 	 {2023},
+                publisher =    {PMLR}
+              }</code>
+          </pre>
+          </section>
+      </li>
+
+      <li><b>Neural Collapse in the Intermediate Hidden Layers of Classification Neural Networks.</b> <em>Liam Parker, Emre Onal, Anton Stengel, Jake Intrater.</em> ICML Workshop in High-Dimensional Learning Dynamics 2023.
+        <!-- Links -->
+        <div class="button_list">
+          <a href="https://arxiv.org/abs/2308.02760" target="_blank">
+              <button>
+                  <i class="ai ai-arxiv"></i>
+                  arXiv
+              </button>
+          </a>
+          <a href="https://github.com/emreonal11/Neural-Collapse-in-Intermediate-Hidden-Layers-of-Classification-Neural-Networks" target="_blank">
+            <button>
+                <i class="ti ti-brand-github"></i>
+                GitHub
+            </button>
+          </a>
+          <a onclick="toggleBibtex('#parker2023neural')">
+              <button>
+                  <i class="ti ti-book-2"></i>
+                  BibTeX
+              </button>
+          </a>
+        </div>
+        <section id="parker2023neural" style="display: none">
+          <pre>
+              <code>@article{parker2023neural,
+                title={Neural collapse in the intermediate hidden layers of classification neural networks},
+                author={Parker, Liam and Onal, Emre and Stengel, Anton and Intrater, Jake},
+                journal={arXiv preprint arXiv:2308.02760},
+                year={2023}
+              }</code>
+          </pre>
+          </section>
+      </li>
+      </ul>
+  </div>
+
+  <h3 class="title is-4">Theoretical Insights</h3>
+    <div class="content has-text-justified">
+      <ul>
+        <li><b>Understanding Deep Representation Learning via Layerwise Feature Compression and Discrimination.</b> <em>Peng Wang, Xiao Li, Can Yaras, Zhihui Zhu, Laura Balzano, Wei Hu, Qing Qu.</em> ArXiv preprint.
+          <!-- Links -->
+          <div class="button_list">
+            <a href="https://arxiv.org/abs/2311.02960" target="_blank">
+                <button>
+                    <i class="ai ai-arxiv"></i>
+                    arXiv
+                </button>
+            </a>
+            <a href="https://github.com/Heimine/PNC_DLN" target="_blank">
+              <button>
+                  <i class="ti ti-brand-github"></i>
+                  GitHub
+              </button>
+            </a>
+            <a onclick="toggleBibtex('#wang2023understanding')">
+                <button>
+                    <i class="ti ti-book-2"></i>
+                    BibTeX
+                </button>
+            </a>
+          </div>
+          <section id="wang2023understanding" style="display: none">
+            <pre>
+                <code>@article{wang2023understanding,
+                  title={Understanding deep representation learning via layerwise feature compression and discrimination},
+                  author={Wang, Peng and Li, Xiao and Yaras, Can and Zhu, Zhihui and Balzano, Laura and Hu, Wei and Qu, Qing},
+                  journal={arXiv preprint arXiv:2311.02960},
+                  year={2023}
+                }</code>
+            </pre>
+            </section>
+        </li>
+      </ul>
+
+</div>
 <!--/ PROGRESSIVE COLLAPSE ACROSS LAYERS. -->
 
+<!-- List of Reference. -->
+
+<br/>
+<br/>
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
